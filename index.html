@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UG 2024 Batch Sem IV Results - Suriya Vishal D</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Plus Jakarta Sans"', "system-ui", "-apple-system", "sans-serif"],
+                        },
+                        colors: {
+                            portal: {
+                                maroon: "#93181a",
+                                maroonHover: "#7e1416",
+                                darkBg: "#0f0f11",
+                                cardBg: "#17171a",
+                                cardBorder: "#26262a",
+                                rowHover: "#1f1f24",
+                                sgpaBg: "#213c10",
+                                sgpaBorder: "#325816",
+                                sgpaText: "#84e029",
+                                cgpaBg: "#151c28",
+                                cgpaBorder: "#233248",
+                                cgpaText: "#38bdf8",
+                                pillBg: "#222226",
+                                pillBorder: "#34343a",
+                                gpBadgeBg: "#3d280d",
+                                gpBadgeBorder: "#613f10",
+                                gpBadgeText: "#f59e0b",
+                            },
+                        },
+                    },
+                },
+            };
+        </script>
+
+        <!-- Lucide Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="bg-[#0c0c0e] text-[#e4e4e7] min-h-screen font-sans antialiased transition-colors duration-200">
+        <!-- Top Header Navigation Bar -->
+        <header class="bg-[#93181a] text-white sticky top-0 z-40 shadow-md">
+            <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+                <!-- Brand / Logo & Institution info -->
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center backdrop-blur-sm border border-white/15"
+                    >
+                        <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div class="hidden sm:block">
+                        <span class="text-xs uppercase tracking-wider font-semibold opacity-85 block leading-tight"
+                            >Student Academic Portal</span
+                        >
+                        <span class="text-sm font-bold tracking-tight">Examinations & Grading</span>
+                    </div>
+                </div>
+
+                <!-- Right Action Controls -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <!-- Theme Toggle Switch -->
+                    <button
+                        id="themeToggleBtn"
+                        aria-label="Toggle Theme"
+                        title="Toggle Light/Dark Theme"
+                        class="flex items-center space-x-1.5 px-2 py-1 rounded-full bg-black/25 hover:bg-black/40 border border-white/10 transition"
+                    >
+                        <div class="w-5 h-5 rounded-full bg-[#18181b] flex items-center justify-center shadow-inner">
+                            <i id="themeIcon" data-lucide="moon" class="w-3 h-3 text-amber-300"></i>
+                        </div>
+                        <i data-lucide="sun" class="w-3.5 h-3.5 text-white/70"></i>
+                    </button>
+
+                    <!-- User Profile Name (Plain text, non-clickable, no pfp) -->
+                    <div class="flex items-center pl-1 select-none">
+                        <span class="text-xs sm:text-sm font-semibold tracking-tight whitespace-nowrap text-white"
+                            >Suriya Vishal D</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Container -->
+        <main class="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-7">
+            <!-- Main Results Card Container (Exact replica of screenshot) -->
+            <div class="bg-[#141416] border border-[#232328] rounded-2xl p-4 sm:p-6 shadow-2xl backdrop-blur-sm">
+                <!-- Card Header: Title & Declared Badge -->
+                <div
+                    class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-5 border-b border-[#202025]"
+                >
+                    <div>
+                        <h1 class="text-base sm:text-lg font-bold text-white tracking-tight">
+                            UG 2024 BATCH SEM IV EXAMINATIONS (EVEN 2025-2026) Results
+                        </h1>
+                        <p class="text-xs text-neutral-400 mt-0.5">
+                            Department of Information Technology • Regulation 2024
+                        </p>
+                    </div>
+
+                    <!-- Declared Date Pill -->
+                    <div
+                        class="self-start md:self-auto flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-[#182a15] border border-[#2e5728] text-[#86efac] text-xs font-medium shadow-inner"
+                    >
+                        <i data-lucide="calendar" class="w-3.5 h-3.5 text-[#4ade80]"></i>
+                        <span>Declared: 11 Aug 2026, 07:02 am</span>
+                    </div>
+                </div>
+
+                <!-- GPA Summary Indicators (SGPA & CGPA Cards) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-5">
+                    <!-- SGPA Card (Olive Green Banner) -->
+                    <div
+                        class="bg-[#243e0e] border border-[#395e19] rounded-xl p-4 sm:p-5 flex flex-col justify-between shadow-lg relative overflow-hidden group"
+                    >
+                        <div
+                            class="absolute -right-6 -bottom-6 w-24 h-24 bg-lime-400/10 rounded-full blur-2xl group-hover:bg-lime-400/20 transition"
+                        ></div>
+                        <div>
+                            <span class="text-[11px] font-bold uppercase tracking-widest text-[#a3e635]/80 block mb-1"
+                                >SGPA</span
+                            >
+                            <span class="text-3xl sm:text-4xl font-extrabold text-[#96ea2c] tracking-tight">8.41</span>
+                        </div>
+                        <div
+                            class="mt-3 pt-2 border-t border-[#3b621a]/60 flex items-center justify-between text-[11px] text-lime-200/70"
+                        >
+                            <span>Credits Earned: <strong class="text-white">24 / 24</strong></span>
+                            >
+                        </div>
+                    </div>
+
+                    <!-- CGPA Card (Slate/Charcoal Blue Banner) -->
+                    <div
+                        class="bg-[#15181f] border border-[#242a38] rounded-xl p-4 sm:p-5 flex flex-col justify-between shadow-lg relative overflow-hidden group"
+                    >
+                        <div
+                            class="absolute -right-6 -bottom-6 w-24 h-24 bg-sky-400/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition"
+                        ></div>
+                        <div>
+                            <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400 block mb-1"
+                                >CGPA</span
+                            >
+                            <span class="text-3xl sm:text-4xl font-extrabold text-[#38bdf8] tracking-tight">8.43</span>
+                        </div>
+                        <div
+                            class="mt-3 pt-2 border-t border-[#232b3b] flex items-center justify-between text-[11px] text-slate-400"
+                        >
+                            <span>Cumulative Credits: <strong class="text-white">92 / 92</strong></span>
+                            <span class="px-2 py-0.5 rounded bg-[#0f172a] text-[#38bdf8] font-semibold text-[10px]"
+                                >Distinction Track</span
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courses Table Section -->
+                <div class="overflow-x-auto rounded-xl border border-[#232328] bg-[#111113]">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr
+                                class="border-b border-[#232328] bg-[#161619] text-[12px] font-bold text-neutral-400 tracking-wider"
+                            >
+                                <th scope="col" class="py-3.5 px-4 sm:px-6">Courses (8)</th>
+                                <th scope="col" class="py-3.5 px-4 text-center sm:text-left">Enrollment Type</th>
+                                <th scope="col" class="py-3.5 px-4 text-center">Marks</th>
+                                <th scope="col" class="py-3.5 px-4 text-center sm:text-left">Grade</th>
+                                <th scope="col" class="py-3.5 px-4 text-center">Remark</th>
+                                <th scope="col" class="py-3.5 px-4 sm:px-6 text-right">Course Breakdown</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-[#1e1e23] text-xs font-medium">
+                            <!-- Course 1 -->
+                            <tr class="hover:bg-[#18181c] transition-colors group">
+                                <td class="py-3.5 px-4 sm:px-6">
+                                    <div class="font-bold text-neutral-100 text-sm tracking-tight">
+                                        Operating Systems <span class="text-neutral-400 font-normal">[CS23431]</span>
+                                    </div>
+                                    <div class="text-[11px] text-neutral-400 mt-0.5">Credits: 5</div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <span
+                                        class="inline-block px-3 py-1 rounded-md bg-[#1d1d22] border border-[#2e2e36] text-neutral-300 text-[11px] font-medium"
+                                    >
+                                        Regular
+                                    </span>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <div class="inline-flex items-center space-x-1.5">
+                                        <span class="font-extrabold text-neutral-100 text-sm">A</span>
+                                        <span
+                                            class="px-1.5 py-0.5 rounded bg-[#3b2910] border border-[#5c4015] text-[#fbbf24] text-[10px] font-bold"
+                                            >GP: 8</span
+                                        >
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 sm:px-6 text-right">
+                                    <button
+                                        onclick="openBreakdownModal('CS23431')"
+                                        class="inline-flex items-center space-x-1.5 text-[#38bdf8] hover:text-[#7dd3fc] font-semibold transition group-hover:underline"
+                                    >
+                                        <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                                        <span>View</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Course 2 -->
+                            <tr class="hover:bg-[#18181c] transition-colors group">
+                                <td class="py-3.5 px-4 sm:px-6">
+                                    <div class="font-bold text-neutral-100 text-sm tracking-tight">
+                                        Software Construction
+                                        <span class="text-neutral-400 font-normal">[CS23432]</span>
+                                    </div>
+                                    <div class="text-[11px] text-neutral-400 mt-0.5">Credits: 4</div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <span
+                                        class="inline-block px-3 py-1 rounded-md bg-[#1d1d22] border border-[#2e2e36] text-neutral-300 text-[11px] font-medium"
+                                    >
+                                        Regular
+                                    </span>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <div class="inline-flex items-center space-x-1.5">
+                                        <span class="font-extrabold text-neutral-100 text-sm">A</span>
+                                        <span
+                                            class="px-1.5 py-0.5 rounded bg-[#3b2910] border border-[#5c4015] text-[#fbbf24] text-[10px] font-bold"
+                                            >GP: 8</span
+                                        >
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 sm:px-6 text-right">
+                                    <button
+                                        onclick="openBreakdownModal('CS23432')"
+                                        class="inline-flex items-center space-x-1.5 text-[#38bdf8] hover:text-[#7dd3fc] font-semibold transition group-hover:underline"
+                                    >
+                                        <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                                        <span>View</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Course 3 -->
+                            <tr class="hover:bg-[#18181c] transition-colors group">
+                                <td class="py-3.5 px-4 sm:px-6">
+                                    <div class="font-bold text-neutral-100 text-sm tracking-tight">
+                                        Education for Sustainable Development
+                                        <span class="text-neutral-400 font-normal">[24NHS03]</span>
+                                    </div>
+                                    <div class="text-[11px] text-neutral-400 mt-0.5">Credits: 3</div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <span
+                                        class="inline-block px-3 py-1 rounded-md bg-[#1d1d22] border border-[#2e2e36] text-neutral-300 text-[11px] font-medium"
+                                    >
+                                        Regular
+                                    </span>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <div class="inline-flex items-center space-x-1.5">
+                                        <span class="font-extrabold text-neutral-100 text-sm">B+</span>
+                                        <span
+                                            class="px-1.5 py-0.5 rounded bg-[#3b2910] border border-[#5c4015] text-[#fbbf24] text-[10px] font-bold"
+                                            >GP: 7</span
+                                        >
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 sm:px-6 text-right">
+                                    <button
+                                        onclick="openBreakdownModal('24NHS03')"
+                                        class="inline-flex items-center space-x-1.5 text-[#38bdf8] hover:text-[#7dd3fc] font-semibold transition group-hover:underline"
+                                    >
+                                        <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                                        <span>View</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Course 4 -->
+                            <tr class="hover:bg-[#18181c] transition-colors group">
+                                <td class="py-3.5 px-4 sm:px-6">
+                                    <div class="font-bold text-neutral-100 text-sm tracking-tight">
+                                        Probability Statistics and Simulation
+                                        <span class="text-neutral-400 font-normal">[MA23435]</span>
+                                    </div>
+                                    <div class="text-[11px] text-neutral-400 mt-0.5">Credits: 4</div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <span
+                                        class="inline-block px-3 py-1 rounded-md bg-[#1d1d22] border border-[#2e2e36] text-neutral-300 text-[11px] font-medium"
+                                    >
+                                        Regular
+                                    </span>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <div class="inline-flex items-center space-x-1.5">
+                                        <span class="font-extrabold text-neutral-100 text-sm">A</span>
+                                        <span
+                                            class="px-1.5 py-0.5 rounded bg-[#3b2910] border border-[#5c4015] text-[#fbbf24] text-[10px] font-bold"
+                                            >GP: 8</span
+                                        >
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 sm:px-6 text-right">
+                                    <button
+                                        onclick="openBreakdownModal('MA23435')"
+                                        class="inline-flex items-center space-x-1.5 text-[#38bdf8] hover:text-[#7dd3fc] font-semibold transition group-hover:underline"
+                                    >
+                                        <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                                        <span>View</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Course 5 -->
+                            <tr class="hover:bg-[#18181c] transition-colors group">
+                                <td class="py-3.5 px-4 sm:px-6">
+                                    <div class="font-bold text-neutral-100 text-sm tracking-tight">
+                                        MongoDB Essentials <span class="text-neutral-400 font-normal">[IT23431]</span>
+                                    </div>
+                                    <div class="text-[11px] text-neutral-400 mt-0.5">Credits: 3</div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <span
+                                        class="inline-block px-3 py-1 rounded-md bg-[#1d1d22] border border-[#2e2e36] text-neutral-300 text-[11px] font-medium"
+                                    >
+                                        Regular
+                                    </span>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <div class="inline-flex items-center space-x-1.5">
+                                        <span class="font-extrabold text-neutral-100 text-sm">A</span>
+                                        <span
+                                            class="px-1.5 py-0.5 rounded bg-[#3b2910] border border-[#5c4015] text-[#fbbf24] text-[10px] font-bold"
+                                            >GP: 8</span
+                                        >
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 sm:px-6 text-right">
+                                    <button
+                                        onclick="openBreakdownModal('IT23431')"
+                                        class="inline-flex items-center space-x-1.5 text-[#38bdf8] hover:text-[#7dd3fc] font-semibold transition group-hover:underline"
+                                    >
+                                        <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                                        <span>View</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Course 6 -->
+                            <tr class="hover:bg-[#18181c] transition-colors group">
+                                <td class="py-3.5 px-4 sm:px-6">
+                                    <div class="font-bold text-neutral-100 text-sm tracking-tight">
+                                        Internship <span class="text-neutral-400 font-normal">[IT23421]</span>
+                                    </div>
+                                    <div class="text-[11px] text-neutral-400 mt-0.5">Credits: 1</div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <span
+                                        class="inline-block px-3 py-1 rounded-md bg-[#1d1d22] border border-[#2e2e36] text-neutral-300 text-[11px] font-medium"
+                                    >
+                                        Regular
+                                    </span>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <div class="inline-flex items-center space-x-1.5">
+                                        <span class="font-extrabold text-neutral-100 text-sm">A+</span>
+                                        <span
+                                            class="px-1.5 py-0.5 rounded bg-[#3b2910] border border-[#5c4015] text-[#fbbf24] text-[10px] font-bold"
+                                            >GP: 9</span
+                                        >
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 sm:px-6 text-right">
+                                    <button
+                                        onclick="openBreakdownModal('IT23421')"
+                                        class="inline-flex items-center space-x-1.5 text-[#38bdf8] hover:text-[#7dd3fc] font-semibold transition group-hover:underline"
+                                    >
+                                        <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                                        <span>View</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Course 7 -->
+                            <tr class="hover:bg-[#18181c] transition-colors group">
+                                <td class="py-3.5 px-4 sm:px-6">
+                                    <div class="font-bold text-neutral-100 text-sm tracking-tight">
+                                        Soft Skills - I <span class="text-neutral-400 font-normal">[GE23421]</span>
+                                    </div>
+                                    <div class="text-[11px] text-neutral-400 mt-0.5">Credits: 1</div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <span
+                                        class="inline-block px-3 py-1 rounded-md bg-[#1d1d22] border border-[#2e2e36] text-neutral-300 text-[11px] font-medium"
+                                    >
+                                        Regular
+                                    </span>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <div class="inline-flex items-center space-x-1.5">
+                                        <span class="font-extrabold text-neutral-100 text-sm">A+</span>
+                                        <span
+                                            class="px-1.5 py-0.5 rounded bg-[#3b2910] border border-[#5c4015] text-[#fbbf24] text-[10px] font-bold"
+                                            >GP: 9</span
+                                        >
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 sm:px-6 text-right">
+                                    <button
+                                        onclick="openBreakdownModal('GE23421')"
+                                        class="inline-flex items-center space-x-1.5 text-[#38bdf8] hover:text-[#7dd3fc] font-semibold transition group-hover:underline"
+                                    >
+                                        <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                                        <span>View</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Course 8 -->
+                            <tr class="hover:bg-[#18181c] transition-colors group">
+                                <td class="py-3.5 px-4 sm:px-6">
+                                    <div class="font-bold text-neutral-100 text-sm tracking-tight">
+                                        Organization Management for Engineers
+                                        <span class="text-neutral-400 font-normal">[GE23411]</span>
+                                    </div>
+                                    <div class="text-[11px] text-neutral-400 mt-0.5">Credits: 3</div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <span
+                                        class="inline-block px-3 py-1 rounded-md bg-[#1d1d22] border border-[#2e2e36] text-neutral-300 text-[11px] font-medium"
+                                    >
+                                        Regular
+                                    </span>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 text-center sm:text-left">
+                                    <div class="inline-flex items-center space-x-1.5">
+                                        <span class="font-extrabold text-neutral-100 text-sm">A</span>
+                                        <span
+                                            class="px-1.5 py-0.5 rounded bg-[#3b2910] border border-[#5c4015] text-[#fbbf24] text-[10px] font-bold"
+                                            >GP: 8</span
+                                        >
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-4 text-center text-neutral-500 font-bold text-sm">—</td>
+                                <td class="py-3.5 px-4 sm:px-6 text-right">
+                                    <button
+                                        onclick="openBreakdownModal('GE23411')"
+                                        class="inline-flex items-center space-x-1.5 text-[#38bdf8] hover:text-[#7dd3fc] font-semibold transition group-hover:underline"
+                                    >
+                                        <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                                        <span>View</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Footer Info / Legend -->
+                <div
+                    class="mt-5 pt-4 border-t border-[#202025] flex flex-wrap items-center justify-between text-[11px] text-neutral-400 gap-3"
+                >
+                    <div class="flex flex-wrap items-center gap-3 sm:gap-5">
+                        <span class="flex items-center space-x-1.5">
+                            <span class="w-2 h-2 rounded-full bg-[#fbbf24]"></span>
+                            <span><strong>GP:</strong> Grade Points (Scale of 10)</span>
+                        </span>
+                        <span class="flex items-center space-x-1.5">
+                            <span class="w-2 h-2 rounded-full bg-[#84e029]"></span>
+                            <span
+                                ><strong>O:</strong> 10 | <strong>A+:</strong> 9 | <strong>A:</strong> 8 |
+                                <strong>B+:</strong> 7 | <strong>B:</strong> 6</span
+                            >
+                        </span>
+                    </div>
+                    <div class="text-neutral-500">Last synchronized: Today at 22:28 IST</div>
+                </div>
+            </div>
+
+            <!-- Student Academic Record Summary Footer -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                <div class="bg-[#141416] border border-[#232328] rounded-xl p-4 flex items-center space-x-3.5">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 flex-shrink-0"
+                    >
+                        <i data-lucide="award" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="text-neutral-400 text-[11px]">Academic Standing</div>
+                        <div class="font-bold text-white text-sm">Good Standing (0 Arrears)</div>
+                    </div>
+                </div>
+
+                <div class="bg-[#141416] border border-[#232328] rounded-xl p-4 flex items-center space-x-3.5">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0"
+                    >
+                        <i data-lucide="check-check" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="text-neutral-400 text-[11px]">Total Semesters Cleared</div>
+                        <div class="font-bold text-white text-sm">4 of 8 Semesters Completed</div>
+                    </div>
+                </div>
+
+                <div class="bg-[#141416] border border-[#232328] rounded-xl p-4 flex items-center space-x-3.5">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 flex-shrink-0"
+                    >
+                        <i data-lucide="shield-check" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="text-neutral-400 text-[11px]">Result Authenticity</div>
+                        <div class="font-bold text-white text-sm">Digitally Verified & Locked</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Interactive Course Breakdown Modal Dialog -->
+        <dialog
+            id="courseModal"
+            class="backdrop:bg-black/75 backdrop:backdrop-blur-sm bg-transparent p-0 max-w-xl w-full m-auto rounded-2xl shadow-2xl border-0 overflow-hidden"
+        >
+            <div class="bg-[#17171b] border border-[#2c2c34] rounded-2xl p-6 text-neutral-200 text-sm animate-scale">
+                <!-- Modal Header -->
+                <div class="flex items-start justify-between pb-4 border-b border-[#292930]">
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span
+                                id="modalCourseCode"
+                                class="text-xs font-bold px-2 py-0.5 rounded bg-red-500/15 text-red-400 border border-red-500/30"
+                                >CS23431</span
+                            >
+                            <span id="modalCourseCredits" class="text-xs text-neutral-400">Credits: 5</span>
+                        </div>
+                        <h2 id="modalCourseTitle" class="text-lg font-bold text-white mt-1.5">Operating Systems</h2>
+                    </div>
+                    <button
+                        onclick="closeBreakdownModal()"
+                        class="text-neutral-400 hover:text-white p-1 rounded-lg bg-[#23232a] hover:bg-[#2e2e38] transition"
+                    >
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Modal Body Content -->
+                <div class="mt-4 space-y-4">
+                    <!-- Grade & Points Overview -->
+                    <div class="grid grid-cols-3 gap-2 text-center">
+                        <div class="bg-[#202026] p-3 rounded-xl border border-[#2b2b34]">
+                            <span class="text-[10px] text-neutral-400 uppercase tracking-wider block"
+                                >Grade Secured</span
+                            >
+                            <span id="modalGrade" class="text-xl font-extrabold text-white">A</span>
+                        </div>
+                        <div class="bg-[#202026] p-3 rounded-xl border border-[#2b2b34]">
+                            <span class="text-[10px] text-neutral-400 uppercase tracking-wider block">Grade Point</span>
+                            <span id="modalGradePoint" class="text-xl font-extrabold text-[#fbbf24]">8.0</span>
+                        </div>
+                        <div class="bg-[#202026] p-3 rounded-xl border border-[#2b2b34]">
+                            <span class="text-[10px] text-neutral-400 uppercase tracking-wider block">Status</span>
+                            <span
+                                id="modalResultStatus"
+                                class="text-sm font-bold text-emerald-400 flex items-center justify-center mt-1"
+                            >
+                                <i data-lucide="check" class="w-4 h-4 mr-1"></i> PASS
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Internal Evaluation Breakdown -->
+                    <div class="bg-[#121215] border border-[#24242c] rounded-xl p-3.5 space-y-2.5">
+                        <div
+                            class="text-xs font-bold text-neutral-300 flex items-center justify-between pb-2 border-b border-[#23232a]"
+                        >
+                            <span>Assessment Component</span>
+                            <span>Marks / Weightage</span>
+                        </div>
+
+                        <div class="flex justify-between text-xs text-neutral-300">
+                            <span>Continuous Assessment 1 (CA-1)</span>
+                            <span class="font-semibold text-white">44 / 50</span>
+                        </div>
+                        <div class="flex justify-between text-xs text-neutral-300">
+                            <span>Continuous Assessment 2 (CA-2)</span>
+                            <span class="font-semibold text-white">42 / 50</span>
+                        </div>
+                        <div class="flex justify-between text-xs text-neutral-300">
+                            <span>Assignments & Mini Project</span>
+                            <span class="font-semibold text-white">19 / 20</span>
+                        </div>
+                        <div class="flex justify-between text-xs text-neutral-300">
+                            <span>End Semester Examination (ESE)</span>
+                            <span class="font-semibold text-white">78 / 100</span>
+                        </div>
+                        <div
+                            class="pt-2 border-t border-[#23232a] flex justify-between text-xs font-bold text-emerald-400"
+                        >
+                            <span>Weighted Total Score</span>
+                            <span>82.4% (Grade A)</span>
+                        </div>
+                    </div>
+
+                    <!-- Attendance & Faculty details -->
+                    <div
+                        class="flex items-center justify-between text-xs text-neutral-400 bg-[#202026] px-3.5 py-2.5 rounded-xl border border-[#2b2b34]"
+                    >
+                        <span>Attendance: <strong class="text-white">96%</strong></span>
+                        <span>Faculty: <strong class="text-white" id="modalFaculty">Dr. S. Ramesh</strong></span>
+                    </div>
+                </div>
+
+                <!-- Modal Footer Action -->
+                <div class="mt-5 flex justify-end">
+                    <button
+                        onclick="closeBreakdownModal()"
+                        class="px-4 py-2 bg-[#93181a] hover:bg-[#7e1416] text-white text-xs font-semibold rounded-lg transition"
+                    >
+                        Close Breakdown
+                    </button>
+                </div>
+            </div>
+        </dialog>
+
+        <script src="script.js"></script>
+    </body>
+</html>
